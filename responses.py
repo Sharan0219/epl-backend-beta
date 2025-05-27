@@ -25,7 +25,7 @@ validate_otp_existing_user_response = {
     "user_exists": True,
     "user_details": {
         "name": "Ujjwal",
-        "mobile": "8757636065",
+        "mobile": "8000080000",
         "email": "sharanujjwal02@gmail.com"
     }
 }
@@ -153,7 +153,7 @@ quiz_mock_response = {
 }
 
 start_quiz_session_request_body = {"quiz_id": "test_1",
-                                   "user_mobile": "8757636065",
+                                   "user_mobile": "8000080000",
                                    "started_at": "2025-01-16T10:30:00Z",
                                    "device_info": {
                                        "platform": "flutter",
@@ -210,7 +210,7 @@ check_quiz_progress_no_progress_response = {
 
 save_quiz_progress_request_body = {
     "quiz_id": "test_1",
-    "user_mobile": "8757636065",
+    "user_mobile": "8000080000",
     "current_question_index": 3,
     "answers_progress": [
         {
@@ -239,7 +239,7 @@ save_quiz_progress_success_response = {
 
 submit_question_answer_request_body = {
     "quiz_id": "test_1",
-    "user_mobile": "8757636065",
+    "user_mobile": "8000080000",
     "question_id": "q001",
     "answer_data": {
         "question_id": "q001",
@@ -266,7 +266,7 @@ submit_question_answer_success_response = {
 
 complete_quiz_request_body = {
     "quiz_id": "test_1",
-    "user_mobile": "8757636065",
+    "user_mobile": "8000080000",
     "final_score": 85.5,
     "total_time_spent": 450,
     "final_stats": {
