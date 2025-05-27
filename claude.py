@@ -27,7 +27,7 @@ def get_otp():
 @app.route('/api/validate-otp', methods=['POST'])
 def validate_otp():
     data = request.json
-    # {"mobile": "8757636065", "otp": "1234"}
+    # {"mobile": "8000080000", "otp": "1234"}
 
     return jsonify(validate_otp_existing_user_response)
 
@@ -35,7 +35,7 @@ def validate_otp():
 @app.route('/api/get-contests', methods=['GET'])
 def get_contests():
     # data = request.json
-    # {"mobile": "8757636065", "otp": "1234"}
+    # {"mobile": "8000080000", "otp": "1234"}
     contest_data = {
         "name": "Daily Challenge - Quiz",
         "description": "Join this real-time quiz challenge and win amazing rewards! Time remaining: 30:00 mins.",
@@ -63,7 +63,7 @@ def update_profile():
     """
     {"name":"user-213","email":"aditya.patra@expinfi.com","mobile":"8757636065","exam":"CAT"}
     """
-    # {"mobile": "8757636065", "otp": "1234"}
+    # {"mobile": "8000080000", "otp": "1234"}
 
     return jsonify({"name": data.get('name'), "mobile": data.get('mobile'), "email": data.get('email')})
 
