@@ -89,7 +89,7 @@ def check_quiz_progress():
     quiz_id = request.args.get('quiz_id')
     # Mock quiz data
 
-    return jsonify(check_quiz_progress_success_response), 200
+    return jsonify(check_quiz_progress_no_progress_response), 200
 
 
 @app.route('/api/save-quiz-progress', methods=['POST'])
