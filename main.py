@@ -84,7 +84,7 @@ def start_quiz():
     return jsonify(start_quiz_session_success_response), 200
 
 
-@app.route('/api/check-quiz-progress?quiz_id=test_1&user_mobile=8757636065', methods=['GET'])
+@app.route('/api/check-quiz-progress', methods=['GET'])
 def check_quiz_progress():
     quiz_id = request.args.get('quiz_id')
     # Mock quiz data
