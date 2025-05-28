@@ -3,7 +3,7 @@ from flask_cors import CORS  # Import CORS
 from flask import request
 from responses import quiz_mock_response, validate_otp_existing_user_response, get_otp_successful_response, \
     start_quiz_session_success_response, check_quiz_progress_success_response, save_quiz_progress_success_response, \
-    submit_question_answer_success_response, complete_quiz_success_response, quiz_post_submit_response
+    submit_question_answer_success_response, complete_quiz_success_response, quiz_post_submit_response, check_quiz_progress_no_progress_response
 
 app = Flask(__name__)
 # Configure CORS to allow all origins
